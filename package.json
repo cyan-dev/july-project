@@ -17,6 +17,6 @@
     ],
     "author": "cyan-dev",
     "devDependencies": {
-      "electron": "^2.0.3"
+        "electron": "^2.0.3"
     }
 }
