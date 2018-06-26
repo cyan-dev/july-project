@@ -11,5 +11,3 @@ function waitTime(time /*temps en millisecondes*/) {
     
     window.dispatchEvent(e);
 }
-
-waitTime(500);
