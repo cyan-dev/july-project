@@ -3,6 +3,13 @@ body {
     color: white;
 }
 
+#mlurg {
+    position: absolute;
+    width: 175px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*  Couleurs des noms d'objets WoW
 **  Heritage    : #00CCFF
 **  Legendaire  : #FF8000
