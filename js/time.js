@@ -3,12 +3,20 @@
 function waitTime(time /*temps en millisecondes*/) {
     let start = Date.now();
 
-    var e = new Event('wakeUp');
+    let e = new Event('wakeUp');
 
+    var send = 800000
     while(Date.now() < start + time) {
-        console.log(Math.floor((Date.now() - start) / time * 100) + '%')
+        if(send === 800000) {
+            send = 0;
+            console.log(Math.floor((Date.now() - start) / time * 100) + '%');
+        }
+        else {
+            send  += 1
+        }
     }
     
+    console.log(Math.floor((Date.now() - start) / time * 100) + '%');
     window.dispatchEvent(e);
 
 }
