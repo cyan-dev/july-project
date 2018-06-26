@@ -5,7 +5,7 @@ function waitTime(time /*temps en millisecondes*/) {
 
     let e = new Event('wakeUp');
 
-    var send = 800000
+    let send = 800000
     while(Date.now() < start + time) {
         if(send === 800000) {
             send = 0;
