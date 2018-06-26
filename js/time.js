@@ -1,13 +1,12 @@
 "use strict";
 
 function waitTime(time /*temps en millisecondes*/) {
-    d = new Date();
-    limit = d.getTime() + time;
+    let d = new Date();
+    let limit = d.now() + time;
 
-    var e = newEvent('wakeUp');
+    var e = new Event('wakeUp');
 
-    while(d.getTime() < limit) {
-
+    while(d.now() < limit) {
     }
     
     window.dispatchEvent(e)
