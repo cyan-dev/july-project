@@ -1,26 +1,26 @@
+"use strict";
+
 let money = 0
 
-mainDiv = document.getElementById('maindiv')
+mainDiv = document.getElementById('maindiv');
 
-let enemy = document.createElement('img')
-enemy.src = './media/img/murloc.gif'
-enemy.alt = 'murloc des profondeurs'
+let enemy = document.createElement('img');
+enemy.src = './media/img/murloc.gif';
+enemy.alt = 'murloc';
 
-let moneyDisplay = document.createElement('p')
-moneyDisplay.textContent = money + ' pc'
-mainDiv.appendChild(moneyDisplay)
-
-mainDiv.appendChild(moneyDisplay)
+let moneyDisplay = document.createElement('p');
+moneyDisplay.textContent = money + ' pc';
+mainDiv.appendChild(moneyDisplay);
 
 function addMoney(money, moneyDisplay) {
-    money += 1
-    moneyDisplay.textContent = money + ' pc'
+    money += 1;
+    moneyDisplay.textContent = money + ' pc';
 
-    return money
+    return money;
 }
 
-mainDiv.appendChild(enemy)
+mainDiv.appendChild(enemy);
 
 enemy.addEventListener('click', () => {
-    money = addMoney(money, moneyDisplay)
+    money = addMoney(money, moneyDisplay);
 })
