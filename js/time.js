@@ -7,16 +7,14 @@ function waitTime(time /*temps en millisecondes*/) {
 
     let send = 800000
     while(Date.now() < start + time) {
-        if(send === 800000) {
-            send = 0;
-            console.log(Math.floor((Date.now() - start) / time * 100) + '%');
-        }
-        else {
-            send  += 1
-        }
-    }
-    
-    console.log(Math.floor((Date.now() - start) / time * 100) + '%');
-    window.dispatchEvent(e);
 
+    }
+    return true;
+}
+
+function looptime(time) {
+    while(true) {
+        waitTime(time);
+        console.log('clock : ' + time);
+    }
 }
