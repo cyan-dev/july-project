@@ -22,5 +22,6 @@ function addMoney(money, moneyDisplay) {
 mainDiv.appendChild(enemy);
 
 enemy.addEventListener('click', () => {
+    waitTime(1000);
     money = addMoney(money, moneyDisplay);
 })
