@@ -4,25 +4,26 @@ let money = 0;
 
 let mainDiv = document.getElementById('maindiv');
 
-let moneyDisplay = document.createElement('p');
-moneyDisplay.textContent = money + ' pc';
-mainDiv.appendChild(moneyDisplay);
+let moneyDisplay = document.getElementById('money');
 
-let enemy = document.createElement('img');
-enemy.id = 'mlurg';
-enemy.src = './media/img/murloc.gif';
-enemy.alt = 'murloc';
-mainDiv.appendChild(enemy);
+let enemy = document.getElementById('mlurg')
 
-function addMoney(money, moneyDisplay) {
+function addMoney(money) {
     /*
-    Cette fonction ajoute 1 pièce de cuivre au compteur de monnaie et gère 
-    l'affichage du compteur de pièce en conséquences.
+    Cette fonction retourne la quantité d'argent + 1
     */
-    money += 1;
-    moneyDisplay.textContent = money + ' pc';
+    return money + 1;
+}
 
-    return money;
+function displayMoney(money, moneyDisplay) {
+    let gold = Math.floor(money / 10000);
+    let silver = Math.floor((money - gold*10000) / 100);
+    let copper = money - gold*10000 - silver*100;
+
+    moneyDisplay.textContent = 
+            gold + ' po, ' 
+            + silver + ' pa, ' 
+            + copper + ' pc';
 }
 
 function suffer() {
@@ -44,12 +45,11 @@ function listenClickOnMurloc() {
     Cette fonction gère l'écoute de l'événement de click sur le Murloc
     */
     enemy.onclick = () => {
-        enemy.onclick = null;
+        //enemy.onclick = null;
         suffer();
-        setTimeout(() => {
-            money = addMoney(money, moneyDisplay);
-            listenClickOnMurloc();
-        }, 1000);
+        money = addMoney(money);
+        displayMoney(money, moneyDisplay)
+        listenClickOnMurloc();
     }
 }
 
