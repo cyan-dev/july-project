@@ -10,6 +10,20 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#menu {
+    position: absolute;
+    bottom: 5px;
+}
+
+.menu {
+    width: 50px;
+    margin-right: 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 5px;
+}
+
 /*  Couleurs des noms d'objets WoW
 **  Heritage    : #00CCFF
 **  Legendaire  : #FF8000
