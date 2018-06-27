@@ -17,9 +17,9 @@ function addMoney(money) {
 }
 
 function displayMoney(money, gold, silver, copper) {
-    gold.innerHTML = Math.floor(money / 10000);
-    silver.innerHTML = Math.floor((money - gold*10000) / 100);
-    copper.inerHTML = money - gold*10000 - silver*100;
+    gold.textContent = Math.floor(money / 10000);
+    silver.textContent = Math.floor((money / 100) % 100);
+    copper.textContent = money % 100;
 
 }
 
