@@ -1,10 +1,11 @@
 "use strict";
 
 let money = 0;
+let gold = document.getElementById('goldCount');
+let silver = document.getElementById('silverCount');
+let copper = document.getElementById('copperCount');
 
 let mainDiv = document.getElementById('maindiv');
-
-let moneyDisplay = document.getElementById('money');
 
 let enemy = document.getElementById('mlurg')
 
@@ -15,15 +16,11 @@ function addMoney(money) {
     return money + 1;
 }
 
-function displayMoney(money, moneyDisplay) {
-    let gold = Math.floor(money / 10000);
-    let silver = Math.floor((money - gold*10000) / 100);
-    let copper = money - gold*10000 - silver*100;
+function displayMoney(money, gold, silver, copper) {
+    gold.innerHTML = Math.floor(money / 10000);
+    silver.innerHTML = Math.floor((money - gold*10000) / 100);
+    copper.inerHTML = money - gold*10000 - silver*100;
 
-    moneyDisplay.textContent = 
-            gold + ' po, ' 
-            + silver + ' pa, ' 
-            + copper + ' pc';
 }
 
 function suffer() {
@@ -48,7 +45,7 @@ function listenClickOnMurloc() {
         //enemy.onclick = null;
         suffer();
         money = addMoney(money);
-        displayMoney(money, moneyDisplay)
+        displayMoney(money, gold, silver, copper)
         listenClickOnMurloc();
     }
 }
