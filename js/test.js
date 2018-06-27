@@ -1,5 +1,5 @@
 "use strict";
 
-window.addEventListener("wakeUp", function(e) {
-    console.log(e);
+window.addEventListener("clock", function(e) {
+    console.log(e.type);
 });
