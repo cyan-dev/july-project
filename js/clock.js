@@ -4,4 +4,4 @@ let clockEvent = new Event('clock');
 
 setInterval(() => {
     window.dispatchEvent(clockEvent);
-}, 50)
+}, 50);
