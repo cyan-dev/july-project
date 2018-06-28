@@ -1,6 +1,6 @@
 {
     "name": "july-project",
-    "version": "0.1.180624",
+    "version": "0.1.180628",
     "description": "Projet de jeu vidéo de l'été 2018 (clicker WoW)",
     "main": "main.js",
     "scripts": {
