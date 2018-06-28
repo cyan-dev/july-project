@@ -20,16 +20,37 @@ body {
     margin-right: 5px;
     border: solid;
     border-width: 2px;
-    border-color: #00CCFF;
+    border-color: #00ccff;
     border-radius: 5px;
 }
 
-/*  Couleurs des noms d'objets WoW
-**  Heritage    : #00CCFF
-**  Legendaire  : #FF8000
-**  Epique      : #A335EE
-**  Rare        : #0070DD
-**  Magique     : #1EFF00
-**  Commun      : #FFFFFF
-**  Camelotte   : #9D9D9D
+.noborder {
+    padding : 0;
+    margin : 0;
+    border-width: 0;
+}
+
+/*  Couleurs des objets WoW par rarete
+**  Heritage    : #00ccff
+**  Legendaire  : #ff8000
+**  Epique      : #a335ee
+**  Rare        : #0070dd
+**  Magique     : #1eff00
+**  Commun      : #ffffff
+**  Camelotte   : #9d9d9d
+*/
+
+/*  Couleurs des classes WoW
+**  DeathKnight : #c41e3b
+**  DemonHunter : #a330c9
+**  Druid       : #ff7c0a
+**  Hunter      : #aad372
+**  Mage        : #68ccef
+**  Monk        : #008467
+**  Paladin     : #f48cba
+**  Priest      : #ffffff
+**  Rogue       : #fff468
+**  Shaman      : #2359ff
+**  Warlock     : #9382c9
+**  Warrior     : #c69b6d
 */
