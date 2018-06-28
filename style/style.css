@@ -27,7 +27,8 @@
 
 
 body {
-    background-image: url(../media/img/Panel-bg-greyblue.jpg);
+    background-image: url(../media/img/elwynn.jpg);
+    background-position: center top;
     color: white;
 }
 
@@ -41,18 +42,27 @@ body {
 
 #menu {
     position: absolute;
-    bottom: 5px;
+    margin: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    border-top: solid;
+    border-top-width: 2px;
+    border-color: black;
+    background-image: url(../media/img/Panel-bg-stacked.jpg);
 }
 
 .menu {
     width: 50px;
-    margin-right: 5px;
+    margin: 5px;
     border: solid;
     border-width: 2px;
     border-color: var(--heritage);
     border-radius: 5px;
     cursor: url(../media/img/cursors/hand.cur), pointer;
 }
+
+
 
 #jobsTab {
     display: none;
