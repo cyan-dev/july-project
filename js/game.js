@@ -1,13 +1,24 @@
 "use strict";
 
+// Gestion de la monnaie
 let money = 0;
 let gold = document.getElementById('goldCount');
 let silver = document.getElementById('silverCount');
 let copper = document.getElementById('copperCount');
 
+// Main div
 let mainDiv = document.getElementById('maindiv');
 
-let enemy = document.getElementById('mlurg')
+// Tabs
+let swampTab = document.getElementById('swampTab');
+let jobsTab = document.getElementById('jobsTab');
+
+// Murloc
+let enemy = document.getElementById('mlurg');
+
+// Menu
+let swampMenu = document.getElementById('swamp');
+let jobsMenu = document.getElementById('jobs');
 
 function addMoney(money) {
     /*
@@ -48,6 +59,16 @@ function listenClickOnMurloc() {
         displayMoney(money, gold, silver, copper)
         listenClickOnMurloc();
     }
+}
+
+swampMenu.onclick = () => {
+    jobsTab.hidden = true;
+    swampTab.hidden = false;
+}
+
+jobsMenu.onclick = () => {
+    swampTab.hidden = true;
+    jobsTab.hidden = false;
 }
 
 listenClickOnMurloc();
