@@ -8,6 +8,7 @@ body {
     width: 175px;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    cursor: url(../media/img/cursors/sword.cur), pointer;
 }
 
 #menu {
@@ -22,6 +23,7 @@ body {
     border-width: 2px;
     border-color: #00ccff;
     border-radius: 5px;
+    cursor: url(../media/img/cursors/hand.cur), pointer;
 }
 
 .noborder {
