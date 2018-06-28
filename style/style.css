@@ -27,7 +27,7 @@
 
 
 body {
-    background-color: #444444;
+    background-image: url(../media/img/Panel-bg-greyblue.jpg);
     color: white;
 }
 
@@ -49,24 +49,55 @@ body {
     margin-right: 5px;
     border: solid;
     border-width: 2px;
-    border-color: #00ccff;
+    border-color: var(--heritage);
     border-radius: 5px;
     cursor: url(../media/img/cursors/hand.cur), pointer;
 }
 
 #jobsTab {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+#jobsList {
+    display: none;
+    flex-direction: column;
+    text-align: right;
+}
+
 .job {
-    width: 200px;
+    background-image: url('../media/img/Panel-bg-stacked.jpg');
+    display: flex;
+    flex-direction: row;
     border: solid;
     border-width: 2px;
-    border-color: #ff8000;
+    border-color: goldenrod;
     margin-bottom: 5px;
 }
-.jobLogo, .jobDisplay {
+
+.jobLogo {
     height: 40px;
+    border-right: solid;
+    border-right-width: 2px;
+    border-color: goldenrod;
+}
+
+.jobDisplay {
+    background-position: center;
+    height: 30px;
+    padding: 5px;
+    width: 100px;
+}
+
+.plus {
+    color: goldenrod;
+    height: 30px;
+    padding: 5px;
+    width: 20px;
+    border-left: solid;
+    border-left-width: 2px;
+    border-color: goldenrod;
 }
 
 .noborder {

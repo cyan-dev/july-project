@@ -2,9 +2,9 @@
 
 // Gestion de la monnaie
 let money = 0;
-let gold = document.getElementById('goldCount');
-let silver = document.getElementById('silverCount');
-let copper = document.getElementById('copperCount');
+let gold = Array.from(document.getElementsByClassName('goldCount'));
+let silver = Array.from(document.getElementsByClassName('silverCount'));
+let copper = Array.from(document.getElementsByClassName('copperCount'));
 
 // Main div
 let mainDiv = document.getElementById('maindiv');
@@ -31,9 +31,15 @@ function addMoney(money) {
 }
 
 function displayMoney(money, gold, silver, copper) {
-    gold.textContent = Math.floor(money / 10000);
-    silver.textContent = Math.floor((money / 100) % 100);
-    copper.textContent = money % 100;
+    gold.forEach((coin) => {
+        coin.textContent = Math.floor(money / 10000);
+    });
+    silver.forEach((coin) => {
+        coin.textContent = Math.floor((money / 100) % 100);
+    });
+    copper.forEach((coin) => {
+        coin.textContent = money % 100;
+    });
 
 }
 
