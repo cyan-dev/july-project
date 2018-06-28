@@ -1,3 +1,31 @@
+:root {
+
+    /*  Couleurs des objets WoW par rarete */
+    --heritage    : #00ccff;
+    --legendaire  : #ff8000;
+    --epique      : #a335ee;
+    --rare        : #0070dd;
+    --magique     : #1eff00;
+    --commun      : #ffffff;
+    --camelotte   : #9d9d9d;
+    
+    /*  Couleurs des classes WoW */
+    --deathKnight : #c41e3b;
+    --demonHunter : #a330c9;
+    --druid       : #ff7c0a;
+    --hunter      : #aad372;
+    --mage        : #68ccef;
+    --monk        : #008467;
+    --paladin     : #f48cba;
+    --priest      : #ffffff;
+    --rogue       : #fff468;
+    --shaman      : #2359ff;
+    --warlock     : #9382c9;
+    --warrior     : #c69b6d;
+
+}
+
+
 body {
     background-color: #444444;
     color: white;
@@ -46,28 +74,3 @@ body {
     margin: 0;
     border-width: 0;
 }
-
-/*  Couleurs des objets WoW par rarete
-**  Heritage    : #00ccff
-**  Legendaire  : #ff8000
-**  Epique      : #a335ee
-**  Rare        : #0070dd
-**  Magique     : #1eff00
-**  Commun      : #ffffff
-**  Camelotte   : #9d9d9d
-*/
-
-/*  Couleurs des classes WoW
-**  DeathKnight : #c41e3b
-**  DemonHunter : #a330c9
-**  Druid       : #ff7c0a
-**  Hunter      : #aad372
-**  Mage        : #68ccef
-**  Monk        : #008467
-**  Paladin     : #f48cba
-**  Priest      : #ffffff
-**  Rogue       : #fff468
-**  Shaman      : #2359ff
-**  Warlock     : #9382c9
-**  Warrior     : #c69b6d
-*/
