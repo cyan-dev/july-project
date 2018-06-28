@@ -12,6 +12,7 @@ let mainDiv = document.getElementById('maindiv');
 // Tabs
 let swampTab = document.getElementById('swampTab');
 let jobsTab = document.getElementById('jobsTab');
+jobsTab.style.display = 'none';
 
 // Murloc
 let enemy = document.getElementById('mlurg');
@@ -19,6 +20,8 @@ let enemy = document.getElementById('mlurg');
 // Menu
 let swampMenu = document.getElementById('swamp');
 let jobsMenu = document.getElementById('jobs');
+
+
 
 function addMoney(money) {
     /*
@@ -62,13 +65,13 @@ function listenClickOnMurloc() {
 }
 
 swampMenu.onclick = () => {
-    jobsTab.hidden = true;
-    swampTab.hidden = false;
+    jobsTab.style.display = 'none';
+    swampTab.style.display = 'flex';
 }
 
 jobsMenu.onclick = () => {
-    swampTab.hidden = true;
-    jobsTab.hidden = false;
+    swampTab.style.display = 'none';
+    jobsTab.style.display = 'flex';
 }
 
 listenClickOnMurloc();

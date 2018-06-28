@@ -26,9 +26,24 @@ body {
     cursor: url(../media/img/cursors/hand.cur), pointer;
 }
 
+#jobsTab {
+    display: none;
+    flex-direction: column;
+}
+.job {
+    width: 200px;
+    border: solid;
+    border-width: 2px;
+    border-color: #ff8000;
+    margin-bottom: 5px;
+}
+.jobLogo, .jobDisplay {
+    height: 40px;
+}
+
 .noborder {
-    padding : 0;
-    margin : 0;
+    padding: 0;
+    margin: 0;
     border-width: 0;
 }
 
