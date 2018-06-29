@@ -47,18 +47,18 @@ body {
     left: 0px;
     width: 100%;
     border-top: solid;
-    border-top-width: 3px;
-    border-color: rgba(218, 165, 32, .9);
+    border-top-width: 2px;
+    border-color: rgba(218, 165, 32, .3);
     background-image: url(../media/img/Panel-bg-stacked-t.png);
 }
 
 .menu {
     width: 60px;
     margin: 10px 0px 5px 10px;
-    border: solid;
-    border-width: 2px;
-    border-color: rgba(218, 165, 32, .9);
-    border-radius: 7px;
+    border: double;
+    border-width: 3px;
+    border-color: rgba(218, 165, 32, .3);
+    border-radius: 30px;
     cursor: url(../media/img/cursors/hand.cur), pointer;
 }
 
