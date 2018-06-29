@@ -1,4 +1,6 @@
 :root {
+    /* Modification du curseur par défault */
+    cursor: url(../media/img/cursors/hand.cur), pointer;
 
     /*  Couleurs des objets WoW par rarete */
     --heritage    : #00ccff;
@@ -24,7 +26,6 @@
     --warrior     : #c69b6d;
 
 }
-
 
 body {
     background-image: url(../media/img/elwynn-r.jpg);
@@ -58,7 +59,7 @@ body {
     border-width: 1px;
     border-color: goldenrod;
     border-radius: 27px;
-    cursor: url(../media/img/cursors/hand.cur), pointer;
+    cursor: url(../media/img/cursors/handActive.cur), pointer;
 }
 
 .menu:hover {
