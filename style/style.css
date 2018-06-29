@@ -27,7 +27,7 @@
 
 
 body {
-    background-image: url(../media/img/elwynn.jpg);
+    background-image: url(../media/img/elwynn-r.jpg);
     background-position: center top;
     color: white;
 }
@@ -35,7 +35,7 @@ body {
 #mlurg {
     position: absolute;
     width: 160px;
-    top: 50%; left: 50%;
+    top: 55%; left: 50%;
     transform: translate(-50%, -50%);
     cursor: url(../media/img/cursors/sword.cur), pointer;
 }
@@ -59,6 +59,22 @@ body {
     border-color: goldenrod;
     border-radius: 27px;
     cursor: url(../media/img/cursors/hand.cur), pointer;
+}
+
+.menu:hover {
+    width: 56px;
+    border-radius: 28px;
+    margin: 10px 0px 5px 2px;
+    border-color: gold;
+    border-width: 2px;
+}
+
+.menu:active {
+    width: 52px;
+    border-radius: 26px;
+    margin: 10px 0px 5px 6px;
+    border-color: gold;
+    border-width: 2px;
 }
 
 
