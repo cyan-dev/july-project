@@ -1,27 +1,8 @@
 "use strict";
 
-// Gestion de la monnaie
 let money = 0;
-let gold = Array.from(document.getElementsByClassName('goldCount'));
-let silver = Array.from(document.getElementsByClassName('silverCount'));
-let copper = Array.from(document.getElementsByClassName('copperCount'));
 
-// Main div
-let mainDiv = document.getElementById('maindiv');
-
-// Tabs
-let swampTab = document.getElementById('swampTab');
-let jobsTab = document.getElementById('jobsTab');
-jobsTab.style.display = 'none';
-
-// Murloc
-let enemy = document.getElementById('mlurg');
-
-// Menu
-let swampMenu = document.getElementById('swamp');
-let jobsMenu = document.getElementById('jobs');
-
-
+ui.jobsTab.style.display = 'none';
 
 function addMoney(money) {
     /*
@@ -48,11 +29,11 @@ function suffer() {
     Cette fonction gère l'animation du Murlock lorsqu'il prend un coup 
     (lorsqu'on clique dessus)
     */
-    enemy.style.transform = 'translate(-55%, -50%)';
+    ui.enemy.style.transform = 'translate(-55%, -50%)';
     setTimeout(() => {
-        enemy.style.transform = 'translate(-45%, -50%)';
+        ui.enemy.style.transform = 'translate(-45%, -50%)';
         setTimeout(() => {
-            enemy.style.transform = 'translate(-50%, -50%)';
+            ui.enemy.style.transform = 'translate(-50%, -50%)';
         }, 100);
     },100);
 }
@@ -61,23 +42,23 @@ function listenClickOnMurloc() {
     /*
     Cette fonction gère l'écoute de l'événement de click sur le Murloc
     */
-    enemy.onclick = () => {
+    ui.enemy.onclick = () => {
         //enemy.onclick = null;
         suffer();
         money = addMoney(money);
-        displayMoney(money, gold, silver, copper);
+        displayMoney(money, ui.gold, ui.silver, ui.copper);
         listenClickOnMurloc();
     }
 }
 
-swampMenu.onclick = () => {
-    jobsTab.style.display = 'none';
-    swampTab.style.display = 'flex';
+ui.swampMenu.onclick = () => {
+    ui.jobsTab.style.display = 'none';
+    ui.swampTab.style.display = 'flex';
 }
 
-jobsMenu.onclick = () => {
-    swampTab.style.display = 'none';
-    jobsTab.style.display = 'flex';
+ui.jobsMenu.onclick = () => {
+    ui.swampTab.style.display = 'none';
+    ui.jobsTab.style.display = 'flex';
 }
 
 listenClickOnMurloc();

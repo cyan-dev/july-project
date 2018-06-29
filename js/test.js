@@ -44,10 +44,10 @@ var load = (money) => {
 }
 
 money = load(money);
-displayMoney(money, gold, silver, copper);
+displayMoney(money, ui.gold, ui.silver, ui.copper);
 
 
-document.getElementById("test").onclick = () => {
+ui.saveMenu.onclick = () => {
     save(money);
 }
 
