@@ -6,8 +6,8 @@ let mainWindow;
 function createWindow() {
     // Création de la fenêtre
     mainWindow = new BrowserWindow({
-        width: 450, 
-        height: 800
+        width: 360, 
+        height: 640
     });
 
     // Rend la fenêtre prioritaire sur le reste de l'affichage
