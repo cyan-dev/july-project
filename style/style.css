@@ -47,8 +47,8 @@ body {
     left: 0px;
     width: 100%;
     border-top: solid;
-    border-top-width: 5px;
-    border-color: rgba(255, 128, 0, .5);
+    border-top-width: 3px;
+    border-color: rgba(218, 165, 32, .9);
     background-image: url(../media/img/Panel-bg-stacked-t.png);
 }
 
@@ -57,7 +57,7 @@ body {
     margin: 10px 0px 5px 10px;
     border: solid;
     border-width: 2px;
-    border-color: rgba(255, 128, 0, .5);
+    border-color: rgba(218, 165, 32, .9);
     border-radius: 7px;
     cursor: url(../media/img/cursors/hand.cur), pointer;
 }
