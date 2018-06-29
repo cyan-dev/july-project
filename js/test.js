@@ -44,6 +44,12 @@ var load = (money) => {
 }
 
 money = load(money);
+displayMoney(money, gold, silver, copper);
+
+
+document.getElementById("test").onclick = () => {
+    save(money);
+}
 
 var save = (money) => {
     window.localStorage.setItem('money', money);

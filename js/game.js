@@ -65,7 +65,7 @@ function listenClickOnMurloc() {
         //enemy.onclick = null;
         suffer();
         money = addMoney(money);
-        displayMoney(money, gold, silver, copper)
+        displayMoney(money, gold, silver, copper);
         listenClickOnMurloc();
     }
 }
