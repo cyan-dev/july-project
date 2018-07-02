@@ -25,5 +25,5 @@ murloc.display.onclick = () => {
     console.log("aie");
     murloc.suffer();
     game.addMoney(game);
-    ui.displayMoney(ui, game.money);
+    ui.displayMoney(game.money);
 }
