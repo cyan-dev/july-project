@@ -31,49 +31,62 @@ game.setProduction = function(self) {
 /*  Instanciation des metiers  */
 game.jobs = new Array()
 
-document.addEventListener('load', () => {
-    game.alchemy = new Job('alchimie');
-    game.jobs.push('alchemy');
+game.alchemy = new Job('alchimie');
+game.jobs.push('alchemy');
 
-    game.archeology = new Job('archeologie');
-    game.jobs.push('archeology');
+game.archeology = new Job('archeologie');
+game.jobs.push('archeology');
 
-    game.blacksmithing = new Job('forge');
-    game.jobs.push('blacksmithing');
+game.blacksmithing = new Job('forge');
+game.jobs.push('blacksmithing');
 
-    game.cooking = new Job('cuisine');
-    game.jobs.push('cooking');
+game.cooking = new Job('cuisine');
+game.jobs.push('cooking');
 
-    game.enchanting = new Job('enchantement');
-    game.jobs.push('enchanting');
+game.enchanting = new Job('enchantement');
+game.jobs.push('enchanting');
 
-    game.engineering = new Job('ingenierie');
-    game.jobs.push('engineering');
+game.engineering = new Job('ingenierie');
+game.jobs.push('engineering');
 
-    game.firstAid = new Job('secourisme');
-    game.jobs.push('firstAid');
+game.firstAid = new Job('secourisme');
+game.jobs.push('firstAid');
 
-    game.fishing = new Job('peche');
-    game.jobs.push('fishing');
+game.fishing = new Job('peche');
+game.jobs.push('fishing');
 
-    game.herbalism = new Job('herboristerie');
-    game.jobs.push('herbalism');
+game.herbalism = new Job('herboristerie');
+game.jobs.push('herbalism');
 
-    game.inscription = new Job('caligraphie');
-    game.jobs.push('inscription');
+game.inscription = new Job('caligraphie');
+game.jobs.push('inscription');
 
-    game.jewelcrafting = new Job('joillerie');
-    game.jobs.push('jewelcrafting');
+game.jewelcrafting = new Job('joillerie');
+game.jobs.push('jewelcrafting');
 
-    game.leatherworking = new Job('travail du cuir');
-    game.jobs.push('leatherworking');
+game.leatherworking = new Job('travail du cuir');
+game.jobs.push('leatherworking');
 
-    game.mining = new Job('minage');
-    game.jobs.push('mining');
+game.mining = new Job('minage');
+game.jobs.push('mining');
 
-    game.skinning = new Job('depecage');
-    game.jobs.push('skinning');
+game.skinning = new Job('depecage');
+game.jobs.push('skinning');
 
-    game.tailoring = new Job('couture');
-    game.jobs.push('tailoring');
+game.tailoring = new Job('couture');
+game.jobs.push('tailoring');
+
+game.jobs.forEach((job) => {
+    document.getElementById(job+'Plus').addEventListener('click', (e) => {
+        game.lvlupJob(game[e.target.id.replace('Plus', '')]);
+    });
+});
+
+window.addEventListener('clock', () => {
+    game.jobs.forEach((job) => {
+        game[job].work();
+    })
+    game.money += Math.floor(game.floatMoney / 100);
+    game.floatMoney %= 100;
+    ui.displayMoney(game.money);
 });

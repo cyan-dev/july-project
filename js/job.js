@@ -16,13 +16,3 @@ function Job(name) {
     }
 
 }
-
-
-window.addEventListener('clock', () => {
-    game.jobs.forEach((job) => {
-        game[job].work();
-    })
-    game.money += Math.floor(game.floatMoney / 100);
-    game.floatMoney %= 100;
-    ui.displayMoney(game.money);
-});
