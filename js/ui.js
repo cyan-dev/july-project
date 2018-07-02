@@ -1,8 +1,10 @@
 var ui = Object();
 
-/*
-    ATTRIBUTS
-*/
+/*  ATTRIBUTS */
+
+// Body
+ui.body = document.querySelector('body');
+
 // Main div
 ui.mainDiv = document.getElementById('maindiv');
 
@@ -24,24 +26,22 @@ ui.swampMenu = document.getElementById('swamp');
 ui.jobsMenu = document.getElementById('jobs');
 ui.saveMenu = document.getElementById('test');
 
-/*
-    METHODES
-*/
+/*  METHODES  */
 ui.displayMoney = (money) => {
     ui.gold.textContent = Math.floor(money / 10000);
     ui.silver.textContent = Math.floor((money / 100) % 100);
     ui.copper.textContent = money % 100;
 }
 
-/*
-    EVENEMENTS
-*/
+/*  EVENEMENTS  */
 ui.swampMenu.onclick = () => {
     ui.jobsTab.style.display = 'none';
     ui.swampTab.style.display = 'flex';
+    ui.body.style.backgroundImage = 'url(./media/img/elwynn-r.jpg)';
 }
 
 ui.jobsMenu.onclick = () => {
     ui.swampTab.style.display = 'none';
     ui.jobsTab.style.display = 'flex';
+    ui.body.style.backgroundImage = 'url(./media/img/panel-bg-greyblue.jpg)';
 }
