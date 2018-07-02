@@ -7,9 +7,9 @@ var ui = Object();
 ui.mainDiv = document.getElementById('maindiv');
 
 // Monnaie
-ui.gold = Array.from(document.getElementsByClassName('goldCount'));
-ui.silver = Array.from(document.getElementsByClassName('silverCount'));
-ui.copper = Array.from(document.getElementsByClassName('copperCount'));
+ui.gold = document.getElementById('goldCount');
+ui.silver = document.getElementById('silverCount');
+ui.copper = document.getElementById('copperCount');
 
 // Onglets
 ui.swampTab = document.getElementById('swampTab');
@@ -28,15 +28,9 @@ ui.saveMenu = document.getElementById('test');
     METHODES
 */
 ui.displayMoney = (money) => {
-    ui.gold.forEach((coin) => {
-        coin.textContent = Math.floor(money / 10000);
-    });
-    ui.silver.forEach((coin) => {
-        coin.textContent = Math.floor((money / 100) % 100);
-    });
-    ui.copper.forEach((coin) => {
-        coin.textContent = money % 100;
-    });
+    ui.gold.textContent = Math.floor(money / 10000);
+    ui.silver.textContent = Math.floor((money / 100) % 100);
+    ui.copper.textContent = money % 100;
 }
 
 /*
