@@ -10,12 +10,12 @@ var load = (money) => {
     }
 }
 
-money = load(money);
-displayMoney(money, ui.gold, ui.silver, ui.copper);
+game.money = load(game.money);
+ui.displayMoney(game.money, ui.gold, ui.silver, ui.copper);
 
 
 ui.saveMenu.onclick = () => {
-    save(money);
+    save(game.money);
 }
 
 var save = (money) => {

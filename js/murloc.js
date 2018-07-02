@@ -3,17 +3,17 @@ var murloc = Object();
 /*
     ATTRIBUTS
 */
-murloc.display = document.getElementById('mlurg');
+murloc.display = ui.murlocDisplay;
 
 /*
     METHODES
 */
-murloc.suffer = (self) => {
-    self.display.style.transform = 'translate(-55%, -50%)';
+murloc.suffer = () => {
+    murloc.display.style.transform = 'translate(-55%, -50%)';
     setTimeout(() => {
-        self.display.style.transform = 'translate(-45%, -50%)';
+        murloc.display.style.transform = 'translate(-45%, -50%)';
         setTimeout(() => {
-            self.display.style.transform = 'translate(-50%, -50%)';
+            murloc.display.style.transform = 'translate(-50%, -50%)';
         }, 100);
     },100);
 }
@@ -21,8 +21,9 @@ murloc.suffer = (self) => {
 /*
     EVENEMENTS
 */
-murloc.display.onclic = () => {
-    self.suffer();
-    money += 1;
-    displayMoney(money, gold, silver, copper);
+murloc.display.onclick = () => {
+    console.log("aie");
+    murloc.suffer();
+    game.addMoney(game);
+    ui.displayMoney(ui, game.money);
 }
