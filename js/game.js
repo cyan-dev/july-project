@@ -4,13 +4,6 @@ let money = 0;
 
 ui.jobsTab.style.display = 'none';
 
-function addMoney(money) {
-    /*
-    Cette fonction retourne la quantité d'argent + 1
-    */
-    return money + 1;
-}
-
 function displayMoney(money, gold, silver, copper) {
     gold.forEach((coin) => {
         coin.textContent = Math.floor(money / 10000);
@@ -62,3 +55,18 @@ ui.jobsMenu.onclick = () => {
 }
 
 listenClickOnMurloc();
+
+/* ******************************************** */
+
+var Game = () => {
+    this.money = 0
+
+    this.cuisine = new Job();
+    this.peche = new Job();
+    this.archeologie = new Job();
+    this.secourisme = new Job();
+
+    this.addMoney = (self) => {
+        return self.money + 1;
+    }
+}
