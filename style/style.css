@@ -27,10 +27,24 @@
 
 }
 
+@font-face {
+	font-family: "Friz Quadrata TT";
+	src: url('./fonts/Friz\ Quadrata\ TT\ Regular.ttf');
+}
+
 body {
     background-image: url(../media/img/elwynn-r.jpg);
     background-position: center top;
+    font-family: "Friz Quadrata TT";
     color: white;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+span {
+    font-size: 15px;
 }
 
 #mlurg {
@@ -47,9 +61,15 @@ body {
 
 #menu {
     position: absolute;
+    position: fixed;
     margin: 0px;
     bottom: 0px;
     left: 0px;
+}
+
+#maindiv {
+    height: 480px;
+    overflow: auto;
 }
 
 .menu {
