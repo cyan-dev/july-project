@@ -12,7 +12,7 @@ function createWindow() {
 
     // Rend la fenêtre prioritaire sur le reste de l'affichage
     // et retire la possibilité de changer sa taille
-    mainWindow.setAlwaysOnTop(true);
+    //mainWindow.setAlwaysOnTop(true);
     mainWindow.setResizable(false);
 
     // Assignation du index.html à la fenêtre

@@ -1,8 +1,8 @@
 "use strict";
 
-var clock = Object();
+var clock = new Object();
 clock.event = new Event('clock');
-clock.cycle = 50;
+clock.cycle = 100;
 clock.id = null;
 
 clock.swOn = (self) => {
