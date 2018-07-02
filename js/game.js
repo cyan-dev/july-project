@@ -31,48 +31,49 @@ game.setProduction = function(self) {
 /*  Instanciation des metiers  */
 game.jobs = new Array()
 
-game.alchemy = new Job('alchimie');
+document.addEventListener('load', () => {
+    game.alchemy = new Job('alchimie');
     game.jobs.push('alchemy');
 
-game.archeology = new Job('archeologie');
+    game.archeology = new Job('archeologie');
     game.jobs.push('archeology');
 
-game.blacksmithing = new Job('forge');
+    game.blacksmithing = new Job('forge');
     game.jobs.push('blacksmithing');
 
-game.cooking = new Job('cuisine');
+    game.cooking = new Job('cuisine');
     game.jobs.push('cooking');
 
-game.enchanting = new Job('enchantement');
+    game.enchanting = new Job('enchantement');
     game.jobs.push('enchanting');
 
-game.engineering = new Job('ingenierie');
+    game.engineering = new Job('ingenierie');
     game.jobs.push('engineering');
 
-game.firstAid = new Job('secourisme');
+    game.firstAid = new Job('secourisme');
     game.jobs.push('firstAid');
 
-game.fishing = new Job('peche');
+    game.fishing = new Job('peche');
     game.jobs.push('fishing');
 
-game.herbalism = new Job('herboristerie');
+    game.herbalism = new Job('herboristerie');
     game.jobs.push('herbalism');
 
-game.inscription = new Job('caligraphie');
+    game.inscription = new Job('caligraphie');
     game.jobs.push('inscription');
 
-game.jewelcrafting = new Job('joillerie');
+    game.jewelcrafting = new Job('joillerie');
     game.jobs.push('jewelcrafting');
 
-game.leatherworking = new Job('travail du cuir');
+    game.leatherworking = new Job('travail du cuir');
     game.jobs.push('leatherworking');
 
-game.mining = new Job('minage');
+    game.mining = new Job('minage');
     game.jobs.push('mining');
 
-game.skinning = new Job('depecage');
+    game.skinning = new Job('depecage');
     game.jobs.push('skinning');
 
-game.tailoring = new Job('couture');
+    game.tailoring = new Job('couture');
     game.jobs.push('tailoring');
-
+});
