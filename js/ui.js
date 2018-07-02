@@ -1,4 +1,4 @@
-var ui = Object()
+var ui = Object();
 
 /*
     MAIN DIV
