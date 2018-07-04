@@ -22,4 +22,6 @@ clock.swOff = (self) => {
     } else return false;
 }
 
-document.onload = clock.swOn(clock);
+setTimeout(() => {
+    clock.swOn(clock);
+}, 1000);
