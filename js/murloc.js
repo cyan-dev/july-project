@@ -22,7 +22,6 @@ murloc.suffer = () => {
     EVENEMENTS
 */
 murloc.display.onclick = () => {
-    console.log("aie");
     murloc.suffer();
     game.addMoney(game);
     ui.displayMoney(game.money);

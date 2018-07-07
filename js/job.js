@@ -3,9 +3,11 @@
 function Job(name) {
 
     /*  Attributs  */
-    this.name = name;   // nom
-    this.lvlJob = 0;    // niveau de metier
-    this.lvlBuild = 0;  // niveau du batiment
+    this.name = name;   // Nom
+    this.lvlJob = 0;    // Niveau de metier
+    this.lvlBuild = 0;  // Niveau du batiment
+    this.goldToUp = 0;  // Besoin en gold pour monter de niveau
+    this.itemsToUp = 0; // Besoin en item pour monter de niveau
 
     this.production = null;
     game.setProduction(this);

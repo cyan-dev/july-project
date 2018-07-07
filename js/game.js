@@ -4,7 +4,7 @@ var game = Object();
 
 game.money = 0;
 game.floatMoney = 0;
-game.cycle = 15;
+game.cycle = 20;
 
 game.addMoney = () => {
     game.money += 1;
