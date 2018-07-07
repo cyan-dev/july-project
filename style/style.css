@@ -1,6 +1,9 @@
 :root {
-    /* Modification du curseur par défault */
+    /*  Modification du curseur par défault  */
     cursor: url(../media/img/cursors/hand.cur), pointer;
+
+    /*  Retire le surlignage bleu de selection  */
+    -webkit-user-select: none;
 
     /*  Couleurs des objets WoW par rarete */
     --heritage    : #00ccff;
@@ -24,7 +27,6 @@
     --shaman      : #2359ff;
     --warlock     : #9382c9;
     --warrior     : #c69b6d;
-
 }
 
 @font-face {
@@ -97,8 +99,6 @@ span {
     border-color: gold;
     border-width: 2px;
 }
-
-
 
 #jobsTab {
     display: none;
