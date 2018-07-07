@@ -1,5 +1,5 @@
 :root {
-    /*  Modification du curseur par défault  */
+    /* Modification du curseur par défault */
     cursor: url(../media/img/cursors/hand.cur), pointer;
 
     /*  Retire le surlignage bleu de selection  */
@@ -27,6 +27,7 @@
     --shaman      : #2359ff;
     --warlock     : #9382c9;
     --warrior     : #c69b6d;
+
 }
 
 @font-face {
@@ -42,7 +43,7 @@ body {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 span {
@@ -100,6 +101,8 @@ span {
     border-width: 2px;
 }
 
+
+
 #jobsTab {
     display: none;
     flex-direction: row;
@@ -116,14 +119,34 @@ span {
     background-image: url('../media/img/Panel-bg-stacked.jpg');
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border: solid;
     border-width: 2px;
     border-color: goldenrod;
     margin-bottom: 5px;
 }
 
-.jobLogo {
+.jobInfos {
+    width: 180px;
     height: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jobHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jobCost {
+    font-size: 11px;
+}
+
+.jobLogo {
+    height: 50px;
     border-right: solid;
     border-right-width: 2px;
     border-color: goldenrod;
@@ -132,18 +155,32 @@ span {
 .jobDisplay {
     background-position: center;
     height: 30px;
-    padding: 5px;
     width: 100px;
+}
+
+.itemImg {
+    width: 11px;
 }
 
 .plus {
     color: goldenrod;
-    height: 30px;
+    height: 40px;
     padding: 5px;
-    width: 20px;
+    width: 40px;
+    font-size: 35px;
+    text-align: center;
     border-left: solid;
     border-left-width: 2px;
     border-color: goldenrod;
+    cursor: url(../media/img/cursors/handActive.cur), pointer;
+}
+
+.plus:hover {
+    border:solid;
+    border-color: var(--heritage);
+    border-width: 2px;
+    color: var(--heritage);
+    padding: 3px
 }
 
 .noborder {
