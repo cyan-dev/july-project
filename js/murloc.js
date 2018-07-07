@@ -23,6 +23,6 @@ murloc.suffer = () => {
 */
 murloc.display.onclick = () => {
     murloc.suffer();
-    game.addMoney(game);
+    game.addMoney();
     ui.displayMoney(game.money);
 }
